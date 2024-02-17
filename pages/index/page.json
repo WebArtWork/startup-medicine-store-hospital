@@ -1,118 +1,124 @@
 {
-	"title": "Cool Title",
-	"store": {
-		"telegram": "https://t.me/wawceo"
-	},
-	"drugs": [
-		{
-			"id": "drug",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
-		},
-		{
-			"id": "drug",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
-		},
-		{
-			"id": "drug",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
-		}
-	],
-	"pharmacies": [
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "pharmacy"
-		},
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "pharmacy"
-		},
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "pharmacy"
-		}
-	],
-	"hospitals": [
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "hospital"
-		},
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "hospital"
-		},
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "hospital"
-		}
-	],
-	"services": [
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "service"
-		},
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "service"
-		},
-		{
-			"id": "",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "service"
-		}
-	],
-	"articles": [
-		{
-			"id": "article",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "article"
-		},
-		{
-			"id": "article",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "article"
-		},
-		{
-			"id": "article",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "article"
-		}
-	]
+  "title": "Cool Title",
+  "store": {
+    "telegram": "https://t.me/wawceo"
+  },
+  "drugs": [
+    {
+      "id": "drug",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://neryxomka.com/template/img/welcome.png",
+      "name": "product"
+    },
+    {
+      "id": "drug",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://neryxomka.com/template/img/welcome.png",
+      "name": "product"
+    },
+    {
+      "id": "drug",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://neryxomka.com/template/img/welcome.png",
+      "name": "product"
+    }
+  ],
+  "pharmacies": [
+    {
+      "id": "",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://www.mayoclinic.org/-/media/kcms/gbs/medical-professionals/images/2020/12/03/13/57/transplant-advanced-heart-767x535.jpg",
+      "name": "Cardiovascular Diseases and Surgery"
+    },
+    {
+      "id": "",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://images.squarespace-cdn.com/content/v1/5abdee1596d455819877579b/1618222571200-U1ZRT04E8C4WK75ZEPQY/Profession-Neurosurgeon-2.jpg",
+      "name": "Neurology and Neurosurgery"
+    },
+    {
+      "id": "",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://www.verywellhealth.com/thmb/nkn-Kx6HFU1mMADmDSgo_y805Qw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1405599529-24f2e442d08744de8a6c090b112773b7.jpg",
+      "name": "Transplant"
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://assets.mayoclinic.org/content/dam/media/global/images/2023/06/26/human_experience.jpg",
+      "name": "hospital"
+    },
+    {
+      "id": "",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://neryxomka.com/template/img/welcome.png",
+      "name": "hospital"
+    },
+    {
+      "id": "",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://neryxomka.com/template/img/welcome.png",
+      "name": "hospital"
+    }
+  ],
+  "services": [
+    {
+      "id": "",
+      "title": "Healing starts here",
+      "description": "The right answers the first time. Effective treatment depends on getting the right diagnosis. Our experts diagnose and treat the toughest medical challenges. Top-ranked in the U.S. Mayo Clinic has more No. 1 rankings than any other hospital in the nation according to U.S. News & World Report.",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://assets.mayoclinic.org/content/dam/media/global/images/2023/12/28/healing-starts-here-MC11REJU-600x800.jpg",
+      "name": "service"
+    },
+    {
+      "id": "",
+      "title": "A team of experts will design your treatment plan",
+      "description": "Your Mayo Clinic care team includes the best specialists in every medical field you need, focused on you. No matter what serious or complex health challenge you're facing, you can be confident that you're receiving the most advanced care at Mayo Clinic.",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://assets.mayoclinic.org/content/dam/media/global/images/2023/06/12/leading-expertise-1200x1600.jpg",
+      "name": "service"
+    },
+    {
+      "id": "",
+      "title": "Providing peace of mind and hope",
+      "description": "Getting your diagnosis right the first time means you can start on the most effective treatment plan. We are continuously developing better tools for diagnosis and treatment, so you get answers, options, and hope where none may have existed before.",
+      "price": 1200,
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://assets.mayoclinic.org/content/dam/media/global/images/2023/06/26/providing-peace-26-10320-600x800.jpg",
+      "name": "service"
+    }
+  ],
+  "articles": [
+    {
+      "id": "article",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://neryxomka.com/template/img/welcome.png",
+      "name": "article"
+    },
+    {
+      "id": "article",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://neryxomka.com/template/img/welcome.png",
+      "name": "article"
+    },
+    {
+      "id": "article",
+      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "thumb": "https://neryxomka.com/template/img/welcome.png",
+      "name": "article"
+    }
+  ]
 }
