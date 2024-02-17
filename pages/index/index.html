@@ -1,217 +1,234 @@
 <style>
-	.hero {
-		background-image: url("{{{variables.hero_bg}}}");
-	}
+  .hero {
+    background-image: url("https://assets.mayoclinic.org/content/dam/media/global/images/2023/06/26/photo_innovation_possible-campaign_2400x800.png");
+  }
 
-	.cta {
-		background-image: url("{{{variables.cta_bg}}}");
-	}
+  .cta {
+    background-image: url("{{{variables.cta_bg}}}");
+  }
 </style>
 
 <section class="hero">
-	<!-- 	<video autoplay muted loop class="hero__bgvideo">
+  <!-- 	<video autoplay muted loop class="hero__bgvideo">
 		<source src="{{{variables.hero_bg}}}" type="video/mp4" />
 	</video> -->
 
-	<div class="hero__container">
-		<div class="hero__main">
-			<h1 class="hero__title">{{{variables.hero_title}}}</h1>
+  <div class="hero__container">
+    <div class="hero__main">
+      <h1 class="hero__title">{{{variables.hero_title}}}</h1>
+      <div class="hero__appointment">
+        <p class="hero__text">{{{variables.hero_text}}}</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="margin-right: 10px"
+        >
+          <path
+            fill="#ffffff"
+            d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+          />
+        </svg>
 
-			<p class="hero__text">{{{variables.hero_text}}}</p>
-			<!-- 
+        <span><a href="#" class="hero__button">Request appointment</a></span>
+      </div>
+      <!-- 
 			<a href="#services" class="hero__link">
 				{{{variables.hero_link_text}}}
 			</a> -->
-		</div>
-	</div>
+    </div>
+  </div>
 </section>
 
 {% if services.length %}
 <section class="services" id="services">
-	<div class="services__container">
-		{% if variables.services_title %}
-		<h2 class="services__title title">{{{variables.services_title}}}</h2>
-		{% endif %}
+  <div class="services__container">
+    {% if variables.about_title %}
+    <h2 class="services__title title">{{{variables.about_title}}}</h2>
+    {% endif %}
 
-		<div class="services__wrapper">
-			{% for service in services %}
-			<div class="services__item services-item">
-				<a href="/service/{{{service.id}}}" class="services-item__img">
-					<img src="{{{service.thumb}}}" alt="{{{service.name}}}" />
-					<span class="services-item__subtitle">
-						{{{service.name}}}
-					</span>
-				</a>
+    <div class="services__wrapper">
+      {% for service in services %}
+      <div class="services__item services-item">
+        <a href="/service/{{{service.id}}}" class="services-item__img">
+          <img src="{{{service.thumb}}}" alt="{{{service.name}}}" />
+          <!-- <span class="services-item__subtitle"> {{{service.name}}} </span> -->
+        </a>
+        <div class="services-item__desc">
+          <div style="margin-top: 40px;">
+            <p style="text-decoration: solid;"></p>
+              {{{service.title}}}
+            </p>
+            <p class="services-item__desc reveal">{{{service.description}}}</p>
+          </div>
+        </div>
+      </div>
 
-				<p class="services-item__desc reveal">{{{service.short}}}</p>
-			</div>
+      <span class="services-item__divider reveal"></span>
+      {% endfor %}
+    </div>
 
-			<span class="services-item__divider reveal"></span>
-			{% endfor %}
-		</div>
-
-		{% if variables.services_button_text %}
-		<a href="/services" class="services__link">{{{variables.services_button_text}}}</a>
-		{% endif %}
-	</div>
+    {% if variables.about_button_text %}
+    <a href="/services" class="services__link"
+      >{{{variables.about_button_text}}}</a
+    >
+    {% endif %}
+  </div>
 </section>
-{% endif %}
-
-{% if hospitals.length %}
 <section class="institutions">
-	<div class="institutions__container">
-		<div class="institutions__header">
-			{% if variables.hospitals_title %}
-			<h2 class="institutions__title title">
-				{{{variables.hospitals_title}}}
-			</h2>
-			{% endif %}
+  <div class="institutions__container">
+    <div class="institutions__header">
+     <div style="display: flex; flex-direction: column; justify-content: space-around; max-width: 50%;height: 175px; ">
+		<h4 style="font-size: 19px;">A compassionate, human experience</h4>
+		<h1 style="font-size: 30px; font-weight: bold;">Focused on creating a plan that works for you</h1>
+	 </div>
+	 <div style="max-width: 50%; font-size: 21px; line-height: 35px;">
+		<p>A team of specialists will thoroughly and carefully evaluate your condition and work together to create a customized plan to meet your goals. Our team approach makes your experience less complicated, so you can focus on getting better.</p>
+	 </div>
+    </div>
 
-			<hr class="institutions__divider reveal" />
+    <div class="institutions__slider swiper">
+      <div>
 
-			{% if variables.hospitals_button_text %}
-			<a href="/hospitals" class="institutions__link reveal">{{{variables.hospitals_button_text}}}</a>
-			{% endif %}
-		</div>
+        <a
+          href="/hospital/"
+        >
+          <div>
+            <img style="width: 100%; height: 545px;" src="https://assets.mayoclinic.org/content/dam/media/global/images/2023/06/26/human_experience.jpg" alt="{{{hospital.name}}}" />
+          </div>
+        </a>
 
-
-		<div class="institutions__slider swiper">
-			<div class="swiper-wrapper">
-				{% for hospital in hospitals %}
-
-				<a href="/hospital/{{{hospital.id}}}" class="institutions__item institutions-item swiper-slide">
-					<div class="institutions-item__img">
-						<img src="{{{hospital.thumb}}}" alt="{{{hospital.name}}}" />
-					</div>
-					<h3 class="institutions-item__title">{{{hospital.name}}}</h3>
-				</a>
-
-				{% endfor %}
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </section>
-{% endif %}
-
-{% if pharmacies.length %}
 <section class="institutions institutions_dark">
-	<div class="institutions__container">
-		<div class="institutions__header">
-			{% if variables.pharmacies_title %}
-			<h2 class="institutions__title title">
-				{{{variables.pharmacies_title}}}
-			</h2>
-			{% endif %}
+  <div class="institutions__container">
+    <div class="institutions__header">
+      {% if variables.pharmacies_title %}
+      <h2 class="institutions__title title">
+        {{{variables.pharmacies_title}}}
+      </h2>
+      {% endif %}
 
-			<hr class="institutions__divider reveal" />
+      <hr class="institutions__divider reveal" />
 
-			{% if variables.pharmacies_button_text %}
-			<a href="/pharmacies" class="institutions__link reveal">{{{variables.pharmacies_button_text}}}</a>
-			{% endif %}
-		</div>
+      {% if variables.pharmacies_button_text %}
+      <a href="/pharmacies" class="institutions__link reveal"
+        >{{{variables.pharmacies_button_text}}}</a
+      >
+      {% endif %}
+    </div>
 
+    <div class="institutions__slider swiper">
+      <div class="swiper-wrapper">
+        {% for pharmacy in pharmacies %}
 
-		<div class="institutions__slider swiper">
-			<div class="swiper-wrapper">
-				{% for pharmacy in pharmacies %}
+        <a
+          href="/pharmacy/{{{pharmacy.id}}}"
+          class="institutions__item institutions-item swiper-slide"
+        >
+          <div class="institutions-item__img">
+            <img src="{{{pharmacy.thumb}}}" alt="{{{pharmacy.name}}}" />
+          </div>
+          <h3 class="institutions-item__title institutions-item__title_dark">
+            {{{pharmacy.name}}}
+          </h3>
+        </a>
 
-				<a href="/pharmacy/{{{pharmacy.id}}}" class="institutions__item institutions-item swiper-slide">
-					<div class="institutions-item__img">
-						<img src="{{{pharmacy.thumb}}}" alt="{{{pharmacy.name}}}" />
-					</div>
-					<h3 class="institutions-item__title institutions-item__title_dark">{{{pharmacy.name}}}</h3>
-				</a>
-
-				{% endfor %}
-			</div>
-		</div>
-	</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </section>
-{% endif %}
-
-{% if drugs.length %}
+<!-- {% endif %} {% if drugs.length %}
 <section class="products">
-	<div class="products__container">
-		<div class="land-section land-section_white">
-			<span class="land-section__line_top reveal reveal__left"></span>
-			<span class="land-section__line_bottom reveal reveal__right"></span>
-			<div class="land-section__slider land-section-slider swiper">
-				<div class="services-slider__wrapper swiper-wrapper">
-					{% for drug in drugs %}
-					<div class="land-section-slider__slide land-section-slide swiper-slide">
-						<a href="/drug/{{{drug.id}}}">
-							<img src="{{{drug.thumb}}}" alt="{{{drug.name}}}" />
-							<span class="land-section-slide__subtitle">
-								{{{drug.name}}}
-							</span>
-						</a>
-					</div>
-					{% endfor %}
-				</div>
-			</div>
+  <div class="products__container">
+    <div class="land-section land-section_white">
+      <span class="land-section__line_top reveal reveal__left"></span>
+      <span class="land-section__line_bottom reveal reveal__right"></span>
+      <div class="land-section__slider land-section-slider swiper">
+        <div class="services-slider__wrapper swiper-wrapper">
+          {% for drug in drugs %}
+          <div
+            class="land-section-slider__slide land-section-slide swiper-slide"
+          >
+            <a href="/drug/{{{drug.id}}}">
+              <img src="{{{drug.thumb}}}" alt="{{{drug.name}}}" />
+              <span class="land-section-slide__subtitle">
+                {{{drug.name}}}
+              </span>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
 
-			<div class="land-section__main">
-				{% if variables.drugs_title %}
-				<h2 class="land-section__title title">
-					{{{variables.drugs_title}}}
-				</h2>
-				{% endif %} {% if variables.drugs_text %}
-				<p class="land-section__text">{{{variables.drugs_text}}}</p>
-				{% endif %} {% if variables.drugs_button_text %}
-				<a href="/drugs" class="land-section__link">{{{variables.drugs_button_text}}}</a>
-				{% endif %}
-			</div>
-		</div>
-	</div>
-</section>
+      <div class="land-section__main">
+        {% if variables.drugs_title %}
+        <h2 class="land-section__title title">{{{variables.drugs_title}}}</h2>
+        {% endif %} {% if variables.drugs_text %}
+        <p class="land-section__text">{{{variables.drugs_text}}}</p>
+        {% endif %} {% if variables.drugs_button_text %}
+        <a href="/drugs" class="land-section__link"
+          >{{{variables.drugs_button_text}}}</a
+        >
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section> -->
 {% endif %} {% if articles.length %}
 <section class="articles">
-	<div class="articles__container">
-		{% if variables.articles_title %}
-		<h2 class="articles__title title">{{{variables.articles_title}}}</h2>
-		{% endif %} {% if variables.articles_subtitle %}
-		<h3 class="articles__subtitle">{{{variables.articles_subtitle}}}</h3>
-		{% endif %}
+  <div class="articles__container">
+    {% if variables.articles_title %}
+    <h2 class="articles__title title">{{{variables.articles_title}}}</h2>
+    {% endif %} {% if variables.articles_subtitle %}
+    <h3 class="articles__subtitle">{{{variables.articles_subtitle}}}</h3>
+    {% endif %}
 
-		<div class="articles__slider swiper">
-			<div class="articles__wrapper articles-wrapper swiper-wrapper">
-				{% for article in articles %}
-				<div class="articles-wrapper__item articles-item swiper-slide">
-					<div class="articles-item__img">
-						<img src="{{{article.thumb}}}" alt="{{{article.name}}}" />
-					</div>
+    <div class="articles__slider swiper">
+      <div class="articles__wrapper articles-wrapper swiper-wrapper">
+        {% for article in articles %}
+        <div class="articles-wrapper__item articles-item swiper-slide">
+          <div class="articles-item__img">
+            <img src="{{{article.thumb}}}" alt="{{{article.name}}}" />
+          </div>
 
-					<div class="articles-item__text">
-						<span class="articles-item__title">{{{article.name}}}</span>
+          <div class="articles-item__text">
+            <span class="articles-item__title">{{{article.name}}}</span>
 
-						<p class="articles-item__desc">{{{article.short}}}</p>
-						<a href="/article/{{{article.id}}}" class="articles-item__link">Read more</a>
-					</div>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
+            <p class="articles-item__desc">{{{article.short}}}</p>
+            <a href="/article/{{{article.id}}}" class="articles-item__link"
+              >Read more</a
+            >
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
 
-
-		{% if variables.articles_button_text %}
-		<a href="/articles" class="articles__link">
-			{{{variables.articles_button_text}}}
-		</a>
-		{% endif %}
-	</div>
+    {% if variables.articles_button_text %}
+    <a href="/articles" class="articles__link">
+      {{{variables.articles_button_text}}}
+    </a>
+    {% endif %}
+  </div>
 </section>
 {% endif %}
 
 <section class="cta">
-	<div class="cta__container">
-		{% if variables.cta_title %}
-		<h2 class="cta__title">{{{variables.cta_title}}}</h2>
-		{% endif %} {% if variables.cta_text %}
-		<p class="cta__text">{{{variables.cta_text}}}</p>
-		{% endif %} <!-- {% if variables.cta_button_text %}
+  <div class="cta__container">
+    {% if variables.cta_title %}
+    <h2 class="cta__title">{{{variables.cta_title}}}</h2>
+    {% endif %} {% if variables.cta_text %}
+    <p class="cta__text">{{{variables.cta_text}}}</p>
+    {% endif %}
+    <!-- {% if variables.cta_button_text %}
 		<a href="/manage/profile" class="cta__link">
 			{{{variables.cta_button_text}}}
 		</a>
 		{% endif %} -->
-	</div>
+  </div>
 </section>
