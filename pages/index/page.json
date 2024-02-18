@@ -104,21 +104,21 @@
   "articles": [
     {
       "id": "article",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-      "thumb": "https://neryxomka.com/template/img/welcome.png",
-      "name": "article"
+      "short": "Phoenix & Scottsdale",
+      "thumb": "https://assets.mayoclinic.org/content/dam/media/global/images/2023/06/26/Arizona.png",
+      "name": "Mayo Clinic in Arizona"
     },
     {
       "id": "article",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-      "thumb": "https://neryxomka.com/template/img/welcome.png",
-      "name": "article"
+      "short": "Jacksonville",
+      "thumb": "https://assets.mayoclinic.org/content/dam/media/global/images/2023/06/26/Florida.png",
+      "name": "Mayo Clinic in Florida"
     },
     {
       "id": "article",
-      "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-      "thumb": "https://neryxomka.com/template/img/welcome.png",
-      "name": "article"
+      "short": "Rochester",
+      "thumb": "https://assets.mayoclinic.org/content/dam/media/global/images/2023/06/26/Minnesota.png",
+      "name": "Mayo Clinic in Minnesota"
     }
   ]
 }
